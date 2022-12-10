@@ -31,10 +31,10 @@ const loginUser = async (req, res) => {
   return res.redirect('/login');
 };
 
-const logout = async (req, res) => {
+const logout = (req, res) => {
   delete req.session.userId;
   delete req.session.userType;
-  await req.session.destroy();
+  req.session.destroy();
   userType = '';
   res.redirect('/');
 };
