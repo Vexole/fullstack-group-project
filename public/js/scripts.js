@@ -18,7 +18,7 @@ $(document).ready(function () {
   }
 
   if ($("#validation_errors").is(":visible")) {
-    $("html, body").animate({ scrollTop: 1500 }, "slow");
+    $("html, body").animate({ scrollTop: 1700 }, "slow");
   }
 
   const selectedUserType = $("#userType").attr("value");

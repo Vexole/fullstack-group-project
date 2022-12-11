@@ -35,7 +35,7 @@ const logout = (req, res) => {
   delete req.session.userId;
   delete req.session.userType;
   req.session.destroy();
-  userType = '';
+  userType = null;
   res.redirect('/');
 };
 
