@@ -188,7 +188,18 @@
           <% } %>
 
           <label for="submit"></label>
+          <% if((user?.result != null || user?.result != undefined) &&
+          user.comment && user?.testType == 'G') { %>
+          <input
+            type="submit"
+            name="update"
+            value="Update"
+            id="g2_update"
+            disabled
+          />
+          <% } else { %>
           <input type="submit" name="update" value="Update" id="g2_update" />
+          <% } %>
         </form>
       </section>
     </main>
