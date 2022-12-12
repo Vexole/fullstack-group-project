@@ -106,7 +106,7 @@
               placeholder="Date of Birth"
               min="1990-01-01"
               max="<% new Date(currentDate.setFullYear(currentDate.getFullYear()-16)).toISOString().split('T')[0];  %>"
-              value="<%= user?.dob?.toISOString().subString(0, 10)
+              value="<%= user?.dob?.toISOString().substring(0, 10)
             %>"
               required
             />
