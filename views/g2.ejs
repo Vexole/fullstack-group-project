@@ -211,7 +211,7 @@
 
           <label for="submit"></label>
           <% if ((user?.result != null || user?.result != undefined) &&
-          user?.comment && user?.testType == 'G2') { %>
+          user?.comment && user?.testType == 'G2' && user?.result == 1) { %>
           <input
             type="submit"
             name="submit"
