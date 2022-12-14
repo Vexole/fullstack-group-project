@@ -19,12 +19,12 @@
       user?.comment && user?.testType == 'G2') { %> <% if(user.result) { %>
       <section class="success_result">
         <p>Congratulations! You have passed your test.</p>
-        <p><%- user.comment %></p>
+        <p>Examiner's Remarks: <%- user.comment %></p>
       </section>
       <% } else { %>
       <section class="failure_result">
         <p>Sorry! You have failed your test.</p>
-        <p><%- user.comment %></p>
+        <p>Examiner's Remarks: <%- user.comment %></p>
       </section>
       <% }} %>
 
